@@ -1,0 +1,38 @@
+<div class="container text-center">
+  <main>
+    <form action="#" method="get" class="form-signin">
+      <h2>Sign in</h2>
+      <div class="my-3">
+      <label for="inputEmail"class="d-flex flex-row justify-content-start m-0">Email(phone for mobile account)</label>
+      <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required/>
+    </div>
+    <div class="mb-3">
+      <label for="inputPassword" class="d-flex flex-row justify-content-between m-0">
+        <span>Password</span>
+        <span><a [routerLink]="'/secret/new'">Forgot password?</a></span>
+      </label>
+      <input type="password" id="inputPassword" class="form-control" placeholder="Enter password" required>
+    </div>
+    <div class="my-3">
+      <button type="submit" click="formClick()" class="btn btn-block btn-warning text-center mt-2">
+           Sign in
+      </button>
+    </div>
+    <div class="checkbox">
+      <label class="font-weight-normal">
+        <input type="checkbox" value="Keep me signed in"> Keep me signed in <span><a href="#d"> Details</a> <i class="fa fa-caret-down mx-2"></i></span>
+      </label>
+    </div>
+    </form>
+  </main>
+  <footer class="border-top form-signin">
+     <button type="submit" class="btn btn-default btn-block" (click)="newAccountClick()" style="background-color: #eef0f2;">Create New OVF Account</button>
+  </footer>
+</div>
+<div class="borderTop text-center">
+    <nav class="my-2 my-md-0 mr-md-3 pt-3">
+        <a class="p-4 text" href="#">Conditions of Use</a>
+        <a class="p-4 text" href="#">Privacy</a>
+        <a class="p-4 text" href="#">Help</a>
+      </nav>
+</div>

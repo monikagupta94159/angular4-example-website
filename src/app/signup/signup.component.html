@@ -1,0 +1,40 @@
+<div class="container">
+   <form class="signup-form" method="get" action="#">
+     <h1 class="text-center">Create account</h1>
+     <div class="my-3">
+        <label for="inputName"class="d-flex flex-row justify-content-start m-0">Your name</label>
+        <input type="text" id="inputName" class="form-control" placeholder="Your name" required/>
+      </div>
+     <div class="my-3">
+        <label for="inputEmail"class="d-flex flex-row justify-content-start m-0">Email</label>
+        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required/>
+      </div>
+      <div class="mb-3">
+        <label for="inputPassword" class="d-flex flex-row justify-content-between m-0">
+            Password
+        </label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="At least 6 characters" required>
+      </div>
+      <div class="mb-3">
+          <label for="inputPassword1" class="d-flex flex-row justify-content-between m-0">
+            Re-enter password
+          </label>
+          <input type="password" id="inputPassword1" class="form-control" placeholder="Re-enter password" required>
+        </div>
+        <div class="my-3">
+            <button type="submit" (click)="createNewAccountClick()" class="btn btn-block btn-warning text-center mt-2 font-weight-bold">
+               Create OVF Account
+            </button>
+          </div>
+          <div class="border-top">
+              <span class="align-middle">Already have an account? <a [routerLink]="'/login'">Sign in</a></span>
+          </div>
+   </form>
+</div>
+<div class="borderTop text-center">
+    <nav class="my-2 my-md-0 mr-md-3 pt-3">
+        <a class="p-4 text" href="#">Conditions of Use</a>
+        <a class="p-4 text" href="#">Privacy</a>
+        <a class="p-4 text" href="#">Help</a>
+      </nav>
+</div>
